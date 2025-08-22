@@ -1,0 +1,41 @@
+.maincontainer {
+  .header {
+    height: 7vh;
+    width: 100%;
+    border: 1px solid black;
+    // border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(23, 3, 252);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    // font-size: large;
+  }
+  .navbar {
+    height: 12vh;
+    width: 100%;
+    background-color: darkviolet;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+  }
+  .imagegallery .image-gallery-slide {
+    background: linear-gradient(
+      174deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagegallery .image-gallery-slide img {
+    width: 100%;
+    max-height: 95vh;
+    object-fit: contain; /* image proportion maintain rahegi */
+    z-index: 1;
+  }
+}
