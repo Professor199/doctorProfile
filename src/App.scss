@@ -38,4 +38,40 @@
     object-fit: contain; /* image proportion maintain rahegi */
     z-index: 1;
   }
+
+  .testimonials {
+    text-align: center;
+
+    .slick-slide > div {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    img {
+      height: 40vh;
+      object-fit: contain;
+    }
+    .slick-list {
+      text-align: center;
+    }
+
+    .slick-slide > div {
+      margin: auto;
+    }
+  }
+  .stickers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    img {
+   width: 300px;   /* sabka width equal */
+  height: 300px;  /* sabka height equal */
+  object-fit: contain; /* image proportion safe */
+   aspect-ratio: 1 / 1;
+    padding: 10px;   
+    box-sizing: border-box;
+    }
+  }
 }

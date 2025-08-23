@@ -2,7 +2,6 @@ import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
-import Products from "./Components/Products";
 import Testimonials from "./Components/Testimonials";
 import Stickers from "./Components/Stickers";
 import FAQs from "./Components/FAQs";
@@ -15,11 +14,18 @@ const App = () => {
     <div className="maincontainer">
       <Header />
       <Navbar />
-      <Fotoroma/>
-      <Products/>
-     {/* <Testimonials/>
-     <Stickers/>
-     <FAQs/>
+      <Fotoroma />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Testimonials />
+       <br />
+      <br />
+      <br />
+      <br />
+      <Stickers/>
+     {/* <FAQs/>
      <Footer/> */}
     </div>
   );
