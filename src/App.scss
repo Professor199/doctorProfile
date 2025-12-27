@@ -66,12 +66,12 @@
     justify-content: space-between;
     gap: 10px;
     img {
-   width: 300px;   /* sabka width equal */
-  height: 300px;  /* sabka height equal */
-  object-fit: contain; /* image proportion safe */
-   aspect-ratio: 1 / 1;
-    padding: 10px;   
-    box-sizing: border-box;
+      width: 300px; /* sabka width equal */
+      height: 300px; /* sabka height equal */
+      object-fit: contain; /* image proportion safe */
+      aspect-ratio: 1 / 1;
+      padding: 10px;
+      box-sizing: border-box;
     }
   }
 }

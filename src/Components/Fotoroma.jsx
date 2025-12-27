@@ -19,11 +19,7 @@ const Fotoroma = () => {
     {
       original: "https://shiksha-static-mediadata.s3.ap-southeast-1.amazonaws.com/mediadata/reviewDocument/images/1626980740924IMG_20210723_000136.jpg",
       thumbnail: "https://shiksha-static-mediadata.s3.ap-southeast-1.amazonaws.com/mediadata/reviewDocument/images/1626980740924IMG_20210723_000136.jpg",
-    },
-    // {
-    //   original: "https://img.freepik.com/free-photo/empty-modern-medical-office-having-disease-documents-table-equipped-with-contemporary-furniture-hospital-workplace-with-nobody-it-ready-sickness-consultation-medicine-support_482257-35871.jpg",
-    //   thumbnail: "https://img.freepik.com/free-photo/empty-modern-medical-office-having-disease-documents-table-equipped-with-contemporary-furniture-hospital-workplace-with-nobody-it-ready-sickness-consultation-medicine-support_482257-35871.jpg",
-    // },
+    }
   ];
   return (
     <div className="imagegallery" style={{width:"100%"}}>
