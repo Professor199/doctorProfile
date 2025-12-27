@@ -3,57 +3,67 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Icon } from "semantic-ui-react";
+import patient1 from '../../src/assets/patient1.png'
+import patient12 from '../../src/assets/patient12.png'
+import patient3 from '../../src/assets/patient3.png'
+import patient11 from '../../src/assets/patient11.png'
+import patient5 from '../../src/assets/patient5.png'
+import patient6 from '../../src/assets/patient6.png'
+import patient8 from '../../src/assets/patient8.png'
+import patient7 from '../../src/assets/patient7.png'
+import patient9 from '../../src/assets/patient9.png'
+import patient10 from '../../src/assets/patient10.png'
 
 const testimonials = [
   {
     name: "Ravi Sharma",
     review: "I had chronic migraine issues for years. Dr. Mandloi’s treatment worked wonders for me!",
-    img: "./patient1.png"
+    img: patient1
   },
   {
     name: "Priya Verma",
     review: "Very professional and caring doctor. My thyroid treatment went really well.",
-    img: "./patient12.png"
+    img: patient12
   },
   {
     name: "Ankit Jain",
     review: "Best homeopathy clinic in Bhopal. My skin allergy is completely gone.",
-    img: "./patient3.png"
+    img: patient3
   },
   {
     name: "Neha Gupta",
     review: "Dr. Mandloi listens patiently and gives the best advice. Highly recommended!",
-    img: "./patient11.png"
+    img: patient11
   },
   {
     name: "Suresh Patil",
     review: "My child’s frequent cough and cold improved a lot after treatment. Very satisfied.",
-    img: "./patient5.png"
+    img: patient5
   },
   {
     name: "Kavita Mehra",
     review: "The doctor explains everything clearly and gives genuine advice. Truly trustworthy.",
-    img: "./patient6.png"
+    img:patient6
   },
   {
     name: "Rahul Khanna",
     review: "Excellent experience! My acidity problem got cured with homeopathy here.",
-    img: "./patient8.png"
+    img: patient8
   },
   {
     name: "Shalini Desai",
     review: "Very clean and positive clinic atmosphere. Doctor gives ample time to each patient.",
-    img: "./patient7.png"
+    img: patient7
   },
   {
     name: "Amit Tiwari",
     review: "Dr. Mandloi’s medicines are gentle but very effective. No side effects at all.",
-    img: "./patient9.png"
+    img: patient9
   },
   {
     name: "Pooja Soni",
     review: "I took treatment for hair fall and got amazing results. Highly recommended clinic.",
-    img: "./patient10.png"
+    img:patient10
   }
 ];
 

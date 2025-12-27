@@ -1,15 +1,17 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import profile from '../../src/assets/profile.png'
+import ceremony from '../../src/assets/ceremony.png'
 
 const Fotoroma = () => {
   const images = [
     {
-      original: "./profile.png",
+      original: profile,
       thumbnail: "./profile.png",
     },
     {
-      original: "./ceremony.png",
+      original: ceremony,
       thumbnail: "./ceremony.png",
     },
     {
