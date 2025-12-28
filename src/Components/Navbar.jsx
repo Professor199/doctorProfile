@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Icon } from 'semantic-ui-react'
+import BookAppointmentModal from "./BookAppointmentModal";
+import AboutModal from "./AboutModal";
 
 
-const Navbar = () => {
+const Navbar = ({setOpenModal}) => {
+  const [openBookModal,setOpenBookModal]=useState(false)
+  const [openAboutModal,setOpenAboutModal]=useState(false)
   return (
-    <div className="navbar" style={{position:"sticky"}}>
+    <div className="navbar" style={{position:"sticky"}} id="nav">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" style={{fontSize:"25px"}}>
+          <a className="navbar-brand" href="#" style={{fontSize:"25px",color:"white"}}>
           <Icon name="stethoscope"/>  Dr.Mandloi's Remedies
           </a>
           <button
@@ -23,23 +27,18 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#" style={{fontSize:"18px"}}>
-                  Home
-                </a>
-              </li>
               <li li className="nav-item">
-                <a className="nav-link" href="#" style={{fontSize:"18px"}}>
+                <a className="nav-link" href="#" style={{fontSize:"18px",color:"white"}} onClick={()=>setOpenModal(true)}>
                  Contact
                 </a>
               </li>
                <li li className="nav-item">
-                <a className="nav-link" href="#" style={{fontSize:"18px"}}>
+                <a className="nav-link" href="#" style={{fontSize:"18px",color:"white"}} onClick={()=>setOpenAboutModal(true)}>
               About
                 </a>
               </li>
                <li li className="nav-item">
-                <a className="nav-link" href="#" style={{fontSize:"18px"}}>
+                <a className="nav-link" href="#" style={{fontSize:"18px",color:"white"}} onClick={()=>setOpenBookModal(true)}>
                Book Appointment
                 </a>
               </li>
@@ -58,6 +57,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <BookAppointmentModal openBookModal={openBookModal} setOpenBookModal={(x)=>setOpenBookModal(x)}/>
+      <AboutModal openAboutModal={openAboutModal} setOpenAboutModal={(x)=>setOpenAboutModal(x)}/>
     </div>
   );
 };

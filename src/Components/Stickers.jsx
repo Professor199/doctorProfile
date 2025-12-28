@@ -6,7 +6,7 @@ import sticker3 from '../../src/assets/sticker3.png'
 const Stickers = () => {
   return (
     <div className='stickers'>
-      <img src={sticker1} />
+      <img src={sticker1} style={{borderRadius:"5px"}}/>
        <img src={sticker2}/>
         <img src={sticker3} />
     </div>

@@ -30,7 +30,7 @@ const Fotoroma = () => {
         showPlayButton={true}
         showFullscreenButton={false}
         autoPlay={true}
-        slideInterval={3000}
+        slideInterval={5000}
         showNav={false}
         showThumbnails={false}
       />

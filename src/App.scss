@@ -1,21 +1,43 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  margin-right: 0 !important;
+}
 .maincontainer {
+  // background: #151278;
+  background: linear-gradient(
+    14deg,
+    rgba(21, 18, 120, 1) 0%,
+    rgba(9, 9, 121, 1) 45%,
+    rgba(0, 212, 255, 1) 89%
+  );
   .header {
     height: 7vh;
     width: 100%;
     border: 1px solid black;
-    // border-radius: 5px;
     text-align: center;
     padding: 5px;
-    background-color: rgb(23, 3, 252);
+    background: linear-gradient(
+      14deg,
+      rgba(21, 18, 120, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(0, 212, 255, 1) 89%
+    );
     color: white;
     font-weight: bold;
     font-size: 25px;
-    // font-size: large;
   }
   .navbar {
     height: 12vh;
     width: 100%;
-    background-color: darkviolet;
+    background: linear-gradient(
+      14deg,
+      rgba(21, 18, 120, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(0, 212, 255, 1) 89%
+    );
+    color: white;
     top: 0;
     position: sticky;
     z-index: 2;
@@ -41,7 +63,13 @@
 
   .testimonials {
     text-align: center;
-
+    background: linear-gradient(
+      14deg,
+      rgba(21, 18, 120, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(0, 212, 255, 1) 89%
+    );
+    height: 100%;
     .slick-slide > div {
       display: flex !important;
       justify-content: center !important;
@@ -65,6 +93,13 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    background: linear-gradient(
+      14deg,
+      rgba(21, 18, 120, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(0, 212, 255, 1) 89%
+    );
+    border-radius: 5px;
     img {
       width: 300px; /* sabka width equal */
       height: 300px; /* sabka height equal */
@@ -72,6 +107,76 @@
       aspect-ratio: 1 / 1;
       padding: 10px;
       box-sizing: border-box;
+      border-radius: 5px;
     }
   }
+  .faqs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22 px;
+    color: white;
+  }
+  .faqs .ui.accordion {
+  width: 40%;
+}
+.footer {
+  background: linear-gradient(
+    14deg,
+    rgba(21, 18, 120, 1) 0%,
+    rgba(9, 9, 121, 1) 45%,
+    rgba(0, 212, 255, 1) 89%
+  );
+  color: #ffffff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom .disclaimer {
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
 }

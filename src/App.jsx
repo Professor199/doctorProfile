@@ -1,5 +1,5 @@
-import React from "react";
-// import "semantic-ui-css/semantic.min.css";
+import React, { useState } from "react";
+import "semantic-ui-css/semantic.min.css";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Stickers from "./Components/Stickers";
@@ -8,15 +8,17 @@ import Footer from "./Components/Footer";
 import "./App.scss";
 import { Suspense, lazy } from "react";
 import { Loader } from 'semantic-ui-react'
+import ContactModal from "./Components/ContactModal";
 
 const Fotoroma = lazy(() => import("./Components/Fotoroma"));
 const Testimonials = lazy(() => import("./Components/Testimonials"));
 
 const App = () => {
+  const [openModal,setOpenModal]=useState(false)
   return (
     <div className="maincontainer">
       <Header />
-      <Navbar />
+      <Navbar setOpenModal={(x)=>setOpenModal(x)} />
       <Suspense fallback={<div><Loader active inline='centered' /></div>}>
         <Fotoroma />
         <br />
@@ -30,8 +32,17 @@ const App = () => {
       <br />
       <br />
       <Stickers />
-      {/* <FAQs/>
-     <Footer/> */}
+       <br />
+      <br />
+      <br />
+      <br />
+     <FAQs/>
+      <br />
+      <br />
+      <br />
+      <br />
+     <Footer/> 
+     <ContactModal openModal={openModal} setOpenModal={(x)=>setOpenModal(x)}/>
     </div>
   );
 };

@@ -89,9 +89,9 @@ const Testimonials = () => {
   };
   return (
     <div className="testimonials">
-      <h1 style={{ textAlign: "center" }}>What our patients say <Icon name="comments"/></h1>
+      <h1 style={{ textAlign: "center",color:"white" }}>What our patients say <Icon name="comments"/></h1>
       <div style={{ width: "1000px", margin: "auto" }}>
-        <Slider {...settings}>
+        <Slider {...settings} style={{color:"white"}}>
           {testimonials.map((t, index) => (
             <div key={index} className="testimonial-card">
               <img
@@ -112,8 +112,8 @@ const Testimonials = () => {
               >
                 ⭐⭐⭐⭐⭐
               </div>
-              <p className="review">“{t.review}”</p>
-              <h3 className="name">- {t.name}</h3>
+              <p className="review" style={{color:"white"}}>“{t.review}”</p>
+              <h3 className="name" style={{color:"white"}}>- {t.name}</h3>
             </div>
           ))}
         </Slider>

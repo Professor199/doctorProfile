@@ -3,7 +3,7 @@ import { Icon } from 'semantic-ui-react'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header'id='top'>
       Welcome to Dr. Mandloi's Homoeopathy Remedies   <Icon name="user doctor"/>
     </div>
   )
