@@ -17,6 +17,7 @@ const AboutModal = ({ openAboutModal, setOpenAboutModal }) => {
       open={openAboutModal}
       closeIcon
       size="mini"
+      className="all-modal"
       style={{
         height: "50%",
         width: "50%",

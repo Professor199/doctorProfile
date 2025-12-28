@@ -18,6 +18,7 @@ const ContactModal = ({ openModal, setOpenModal }) => {
       open={openModal}
       closeIcon
       size="mini"
+      className="all-modal"
       style={{
         height: "50%",
         width: "50%",

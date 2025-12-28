@@ -178,7 +178,8 @@ body {
     font-size: 12px;
     opacity: 0.8;
   }
-  @media (max-width: 480px) {
+
+  @media (max-width: 768px) {
     .header {
       min-height: fit-content;
     }
@@ -190,17 +191,74 @@ body {
       }
     }
     .testimonials > div {
-      width: 200px !important;
+      width: 90% !important;
       margin: auto;
     }
     .stickers {
       display: flex;
       flex-direction: column;
       width: fit-content;
-      margin-left: 60px;
+      // margin-left: 60px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
     }
     .faqs {
       width: 100%;
     }
   }
 }
+
+// .contact-modal {
+//   max-width: 450px !important;
+// }
+
+// .contact-modal .content {
+//   max-height: 80vh;
+//   overflow-y: auto;
+// }
+
+@media (max-width: 768px) {
+  .all-modal {
+    width: 90% !important;
+    margin: auto !important;
+    // height: 50% !important;
+    left: auto !important;
+    // margin-left: 25px !important;
+  }
+
+  .all-modal .image {
+    display: none; // mobile pe image hide (optional)
+  }
+
+  .all-modal .content {
+    text-align: center;
+  }
+}
+
+/* ===== FORCE SEMANTIC UI MODAL VISIBILITY ===== */
+
+// .ui.page.modals.dimmer {
+//   display: flex !important;
+//   align-items: center !important;
+//   justify-content: center !important;
+// }
+
+// .ui.modal {
+//   position: relative !important;
+//   top: auto !important;
+//   left: auto !important;
+//   transform: none !important;
+
+//   margin: auto !important;
+//   max-width: 450px !important;
+//   width: 90% !important;
+
+//   display: block !important;
+//   opacity: 1 !important;
+//   z-index: 10001 !important;
+// }
+
+// .ui.dimmer {
+//   z-index: 10000 !important;
+// }

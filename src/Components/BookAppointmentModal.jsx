@@ -27,6 +27,7 @@ const BookAppointmentModal = ({ openBookModal, setOpenBookModal }) => {
       open={openBookModal}
       closeIcon
       size="mini"
+      className="all-modal"
       style={{
         height: "50%",
         width: "50%",
