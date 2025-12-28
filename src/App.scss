@@ -110,7 +110,7 @@ body {
       border-radius: 5px;
     }
   }
-  .faqs{
+  .faqs {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -118,65 +118,89 @@ body {
     color: white;
   }
   .faqs .ui.accordion {
-  width: 40%;
-}
-.footer {
-  background: linear-gradient(
-    14deg,
-    rgba(21, 18, 120, 1) 0%,
-    rgba(9, 9, 121, 1) 45%,
-    rgba(0, 212, 255, 1) 89%
-  );
-  color: #ffffff;
-  padding: 40px 20px 20px;
-}
+    width: 40%;
+  }
+  .footer {
+    background: linear-gradient(
+      14deg,
+      rgba(21, 18, 120, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(0, 212, 255, 1) 89%
+    );
+    color: #ffffff;
+    padding: 40px 20px 20px;
+  }
 
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.footer-col h3,
-.footer-col h4 {
-  margin-bottom: 12px;
-  color: #ffffff;
-}
+  .footer-col h3,
+  .footer-col h4 {
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
 
-.footer-col p {
-  font-size: 14px;
-  line-height: 1.6;
-}
+  .footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
 
-.footer-col ul li {
-  font-size: 14px;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
+  .footer-col ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
 
-.footer-col ul li:hover {
-  text-decoration: underline;
-}
+  .footer-col ul li:hover {
+    text-decoration: underline;
+  }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  margin-top: 30px;
-  padding-top: 15px;
-  text-align: center;
-  font-size: 13px;
-}
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+  }
 
-.footer-bottom .disclaimer {
-  margin-top: 5px;
-  font-size: 12px;
-  opacity: 0.8;
-}
-
+  .footer-bottom .disclaimer {
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  @media (max-width: 480px) {
+    .header {
+      min-height: fit-content;
+    }
+    .navbar {
+      .collapse.navbar-collapse {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 4px;
+        padding-left: 10px;
+      }
+    }
+    .testimonials > div {
+      width: 200px !important;
+      margin: auto;
+    }
+    .stickers {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      margin-left: 60px;
+    }
+    .faqs {
+      width: 100%;
+    }
+  }
 }

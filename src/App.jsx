@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "semantic-ui-css/semantic.min.css";
+// import "semantic-ui-css/semantic.min.css";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Stickers from "./Components/Stickers";
